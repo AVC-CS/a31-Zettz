@@ -7,19 +7,14 @@ int main()
   const double ClassBCost = 12.00;
   const double ClassCCost = 9.00;
 
-  // TODO: Declare integer variables for tickets sold for each class
-
-  // TODO: Declare double variables for total sales per class and grand total
-
-  // TODO: Prompt user and read number of Class A tickets sold
-
-  // TODO: Prompt user and read number of Class B tickets sold
-
-  // TODO: Prompt user and read number of Class C tickets sold
-
-  // TODO: Calculate sales for each class
-
-  // TODO: Calculate total sales
+    int ticketsA, ticketsB, ticketsC;
+    double totalA, totalB, totalC, total;
+    cout << "Number of tickets for Class A, B , and C" << endl;
+    cin >> ticketsA >> ticketsB >> ticketsC;
+    totalA = ticketsA * ClassACost;
+    totalB = ticketsB * ClassBCost;
+    totalC = ticketsC * ClassCCost;
+    total = totalA + totalB + totalC;
 
   cout << setprecision(2) << fixed;
   cout << "Tickets sold for Class A " << ticketsA << " Sales Price for A   " << totalA << endl;
